@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Shizuru&display=swap');
+
+body {
+    background-color: rgb(245, 227, 205);
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Shizuru', cursive;
+    font-size: 2rem;
+    color:rgb(71, 50, 19);
+    animation: heading;
+    animation-duration: 3s;
+    position: relative;
+}
+@keyframes heading {
+    0% {top: -250px;}
+    100% {top: 0px;}
+}
+.ingridients {
+    border:1px solid rgb(245, 227, 205);
+    width:50%;
+    margin: 1rem;
+}
+
+.ingridients-table {
+    opacity: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color:rgb(85, 11, 11);
+    animation: table;
+    animation-duration: 6s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes table {
+    0% {opacity: 0;} /*0-1*/
+    100% {opacity: 1;}
+}
+.instructions {
+    opacity: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color:rgb(85, 11, 11);
+    animation: text;
+    animation-duration: 7s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text {
+    0% {opacity: 0;} /*0-1*/
+    100% {opacity: 1;}
+}
+
+.img {
+    text-align: center;
+    animation: img;
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes img {
+    0% {left: -1000px;}
+    100% {left: 0px;}
+}
+
+.footer {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color:rgb(71, 50, 19);
+}
